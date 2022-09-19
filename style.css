@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.accordient {
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.accordient__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.accordient__block i {
+  font-size: 1.6rem;
+  pointer-events: none;
+}
+
+.accordient__title {
+  font-size: 1.8rem;
+  pointer-events: none;
+}
+
+.accordient__content {
+  margin-bottom: 15px;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+  height: 0;
+}
+
+.accordient__content-inner {
+  font-size: 1.4rem;
+  padding: 20px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.25s linear;
+  /* opacity: 0;
+  visibility: hidden; */
+}
+
+.is-showed {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  margin: 50px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn-modal {
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: coral;
+  color: #fff;
+  padding: 15px;
+  font-size: 1.6rem;
+}
